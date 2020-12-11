@@ -4,7 +4,7 @@ ETL : FIFA Rankings and World Happiness Analysis Project - Predicting the 2030 W
 
 - - -
 
-### TEAM 
+## TEAM 
 
 * Isaac Perez
 * Michelle Risucci
@@ -14,15 +14,21 @@ ETL : FIFA Rankings and World Happiness Analysis Project - Predicting the 2030 W
 
 ETL = Extract, transform, and load
 
-Context : We are apart of the FIFA Data Team who is currently compiling data to help evaluate the 2030 FIFA World Cup bidding process. The FIFA World Cup is an international football tournament contested by the senior men's national teams from the FIFA governing body. 
+#### Context : 
+
+We are apart of the FIFA Data Team who is currently compiling data to help evaluate the 2030 FIFA World Cup bidding process. The FIFA World Cup is an international football tournament contested by the senior men's national teams from the FIFA governing body. 
 
 The World Cup football tournament has been held every four years since 1930 (except 1942 and 1946). Due to its popularity, tourism attaction, and proven local host economic boost, countries around the world "bid" against each other to host the illustrious competition. 
 
-Project Description : There are currently a few proposed bids from multiple European and South American countries at this time but our FIFA Data Team would like to evaluate other potential host candidates who have not officially submitted bids. Our ETL project hopes to use the FIFA World Team Rankings and the World Happiness Reports from 2015-2019 to aid the 2022 FIFA World Cup bidding committee in evaluating potential host candidates: GDP per capita, Social Support, Perceptions of Corruption, International FIFA Rankings, and Overall citizen "Happiness" rank. 
+#### Project Description : 
 
-Project Goals : The 2022 FIFA World Cup Committee would ideally like to select a host country that has a strong supportive economy, a good ranked football team, and a good group of "Happy" football fans. Our group's project data aims to meet all those goals.
+There are currently a few proposed "host bids" from multiple European and South American countries at this time but our FIFA Data Team would like to evaluate other potential host candidates who have not officially submitted bids. Our ETL project hopes to use the FIFA World Team Rankings and the World Happiness Reports from 2015-2019 to aid the 2022 FIFA World Cup bidding committee in evaluating potential host candidates. The following dataset pieces will be analyzed: GDP per capita, Social Support, Perceptions of Corruption, International FIFA Rankings, and Overall citizen "Happiness" rank.
 
-#### Extract
+#### Objective : 
+
+The 2022 FIFA World Cup Committee would ideally like to select a host country that has a strong supportive economy, a good ranked football team, and a good group of "Happy" football fans. Our group's project data aims to meet all those goals.
+
+## Extract
 
 Our team used two different datasets from <www.Kaggle.com>. These two dataset links are located below: 
 
@@ -30,7 +36,7 @@ Our team used two different datasets from <www.Kaggle.com>. These two dataset li
 
 "World Happiness Report up to 2020" https://www.kaggle.com/mathurinache/world-happiness-report
 
-#### Transform
+## Transform
 
 Once the data was downloaded to our local GitHub repository, both datasets were imported and cleaned via the pandas - Python Data Analyis Library.
 
@@ -57,7 +63,7 @@ Once the data was downloaded to our local GitHub repository, both datasets were 
     * Eliminated all null values. 
     * Converted new clean dataframes for each year and region dataframe into one dataframe "Happiness/Happy_All_years.csv".
 
-#### Load
+## Load
 
 After the raw data cleaning, we created three individual tables in PostgreSQL. The tables created are as follows: 
 
@@ -71,21 +77,18 @@ After the raw data cleaning, we created three individual tables in PostgreSQL. T
         * Content Column_name [ country, region ]
 
 
-### Conclusion
+## Conclusion
 
 Our data framework can be utilized to query any of the above mentioned "happiness" columns by fifaBaseTable.rank search and vise versa. 
 
 Example: Please see our Data Team's query results via previous #1 Ranked FIFA Country Team (2015-2019). 
 
 ##### Average GDP by First Ranked FIFA Country
-
 ![](/images/Avg_GDP.png)
 
 ##### Average Happiness Rank by First Ranked FIFA Country
-
 ![](/images/Avg_Rank.png)
     
-
 ### Acknowledgements
 
 NOTE***
