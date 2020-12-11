@@ -75,9 +75,20 @@ After the raw data cleaning, we created three individual tables in PostgreSQL. T
 
 Our data framework can be utilized to query any of the above mentioned "happiness" columns by fifaBaseTable.rank search and vise versa. 
 
+Example: Please see our Data Team's query results via previous #1 Ranked FIFA Country Team (2015-2019). 
+
+##### Average GDP by First Ranked FIFA Country
+
+![](/images/Avg_GDP.png)
+
+##### Average Happiness Rank by First Ranked FIFA Country
+
+![](/images/Avg_Rank.png)
+    
+
 ### Acknowledgements
 
-NOTE******** 
+NOTE***
 
 We did not create this data, only sourced via the <www.Kaggle.com> website. The credit goes to the following original authors and websites: 
 
