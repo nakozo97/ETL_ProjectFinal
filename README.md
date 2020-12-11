@@ -83,10 +83,10 @@ Our data framework can be utilized to query any of the above mentioned "happines
 
 Example: Please see our Data Team's query results via previous #1 Ranked FIFA Country Team (2015-2019). 
 
-##### Average GDP by First Ranked FIFA Country
+##### Average GDP: 
 ![](/images/Avg_GDP.png)
 
-##### Average Happiness Rank by First Ranked FIFA Country
+##### Average Happiness Rank: 
 ![](/images/Avg_Rank.png)
     
 ### Acknowledgements
